@@ -1,11 +1,12 @@
 body{
     margin: 0;
+    font-family: Arial;
 }
 
 .title{
     font-family: 'Courgette', cursive;
     font-size: 100px;
-    color: black;
+    color: rgb(70, 39, 39);
     
     margin: 0;
     padding: 0;
@@ -47,10 +48,17 @@ body{
 }
 
 .container-menu{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    text-align: center;
+    column-gap: 10px;
+    height: 300px;
+    margin: 0 20px;
+}
 
+
+.container-menu div{
+    background-color: lightpink;
+    border: 1px solid lightblue;
 }
